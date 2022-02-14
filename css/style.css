@@ -7,31 +7,29 @@
 }
 
 /* importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
-/* passion one */
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-/* sriracha */
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 /* variáveis - fontes */
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte-01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-02: 'Bayon', sans-serif;
+    --fonte-03: 'Sriracha', cursive;
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
-    font-family: var(--fonte1);
+    font-family: var(--fonte-01);
 }
 
 header{
     background-color: black;
 }
-
-header h1{
+header > h1{
     color: white;
-    font-family: var(--fonte2);
+    font-family: var(--fonte-02);
     font-size: 6.5vw;
     font-variant: small-caps;
     padding-top: 50px;
@@ -54,7 +52,7 @@ header a:hover, footer a:hover{
 }
 
 section{
-    font-family: var(--fonte3);
+    font-family: var(--fonte-03);
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
